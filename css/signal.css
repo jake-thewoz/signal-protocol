@@ -1,0 +1,178 @@
+/*
+-----------------------------*/
+
+html, body {
+  box-sizing: border-box;
+  background: whitesmoke;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+div {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+h1, h2 {
+  font-family: "Righteous", sans-serif;
+}
+
+h2 {
+  margin-top: 90px;
+  font-size: 1.777em;
+}
+
+p {
+    padding: 20px 0 0 0;
+    font-size: 1.25em;
+}
+
+a {
+  color: rgba(106,90,205, 1);
+  transition: .5s;
+  font-size: inherit;
+}
+
+a:hover {
+    color: rgba(82, 70, 158, 1);
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 1em;
+    padding-left: 5em;
+    font-size: 1.25em;
+}
+
+ul {
+    padding: 1em;
+    padding-left: 5em;
+}
+
+.main:last-child {
+  margin-bottom: 30px;
+}
+
+/*     Scrolling Styles
+-----------------------------*/
+
+.main {
+  z-index: 2;
+  background: whitesmoke;
+}
+
+.background {
+  z-index: 1;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+/*     Header Styles
+-----------------------------*/
+
+header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: whitesmoke;
+  top: 0;
+  width: 100%;
+  border-bottom: 3px solid rgba(106,90,205, 1);
+}
+
+header h1 {
+  margin: 10px 0 10px;
+  display: inline-flex;
+  font-size: 1.333em;
+}
+
+header a {
+  display: inline-flex;
+  font-size: 1.333em;
+  padding: 10px 40px;
+  transition: .5s;
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  font-size: 1.777em;
+}
+
+
+/*     Title Styles
+-----------------------------*/
+
+#title {
+    padding: 200px 0;
+    background-image: url(../img/guy-holding-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+#title h1 {
+    font-size: 7em;
+    color: rgba(106,90,205, .8);
+    padding-left: 1.5em;
+}
+
+#about {
+    width: 50%;
+    text-align: center;
+}
+
+/*     Video Styles
+-----------------------------*/
+
+.video-block {
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#key-holder {
+    padding-top: 50px;
+    width: 50%;
+    text-align:center;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#references {
+    margin-bottom: 30px;
+}

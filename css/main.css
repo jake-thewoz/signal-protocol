@@ -1,0 +1,363 @@
+/*
+-----------------------------*/
+
+html, body {
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Righteous", sans-serif;
+}
+
+h2 {
+  margin-top: 90px;
+  font-size: 1.777em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main:last-child {
+  margin-bottom: 30px;
+}
+
+
+
+/*     Scrolling Styles
+-----------------------------*/
+
+.main {
+  z-index: 2;
+  background: whitesmoke;
+}
+
+.background {
+  z-index: 1;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+
+
+/*     Header Styles
+-----------------------------*/
+
+header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: whitesmoke;
+  top: 0;
+  width: 100%;
+  border-bottom: 3px solid rgba(106,90,205, .8);
+}
+
+header h1 {
+  margin: 10px 0 10px;
+  display: inline-flex;
+  font-size: 1.333em;
+}
+
+header a {
+  display: inline-flex;
+  font-size: 1.333em;
+  padding: 0 40px;
+  transition: .5s;
+}
+
+header a:hover {
+  font-size: 1.777em;
+}
+
+
+
+/*   Landing Section
+-----------------------------*/
+
+#landing {
+  background: url("../img/wall1.jpg") no-repeat;
+  height: 900px;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#hello {
+  width: 400px;
+  background-color: rgba(106,90,205, .8);
+  position: relative;
+  top: 120px;
+  left: 10%;
+  font-size: 3em;
+  display: inline-block;
+  z-index: 2;
+  color: white;
+  border: 5px solid;
+}
+
+#hello * {
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  color: white;
+}
+
+
+
+
+/*     Portfolio Section
+-----------------------------*/
+
+#portfolio {
+  text-align: center;
+  width: 100%;
+}
+
+#portfolio-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#portfolio h2 {
+  margin: inherit auto 40px;
+}
+
+.portfolio-item {
+  padding: 10px;
+  border: 3px solid rgba(106,90,205, .8);
+  border-radius: 3px;
+  margin: 60px auto 60px;
+  width: 40%;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+
+
+/*   Preview Sites' Section
+-----------------------------*/
+
+.preview-image {
+  width: 75%;
+  margin: 140px auto 80px;
+  padding: 10px;
+  border: 3px solid rgba(106,90,205, .8);
+  border-radius: 3px;
+}
+
+.preview-image img {
+  max-width: 100%;
+}
+
+.preview-title {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.preview-text-container {
+  padding: 0 60px 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+
+.preview-text-block {
+  width: 40%;
+  margin: 0 5%;
+}
+
+.preview-text-block p a {
+  color: rgba(106,90,205, .8);
+  border-bottom: 1px solid rgba(106,90,205, .8);
+}
+
+.preview-text-container h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+/*   About Section
+-----------------------------*/
+
+#wall2 {
+  background: url("../img/wall2.jpg") no-repeat;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+.profile-pic img {
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.profile-pic, .about-words, .about-history {
+  margin: 60px 0;
+  min-width: 300px;
+}
+
+.about-words *, .about-history * {
+  margin: 10px;
+  line-height: 1.777;
+  padding: 0 20px;
+}
+
+.about-words, .about-history {
+  width: 30%;
+}
+
+.about-words a,
+.about-history a {
+  color: rgba(106,90,205, .8);
+  border-bottom: 1px solid rgba(106,90,205, .8);
+  padding: 0;
+  margin: 0;
+}
+
+.about-words ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+
+
+/*    Contact Section
+-----------------------------*/
+
+#wall3 {
+  background: url("../img/wall3.jpg") no-repeat;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contact h2,
+#contact p {
+  text-align: center;
+}
+
+#contact p {
+  margin: 60px auto 20px;
+}
+
+.contact-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 40px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/icons/phonecall24.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/icons/envelope91.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/icons/at9.png');
+}
+
+.contact-info li.facebook a {
+  background-image: url('../img/icons/logotype3.png');
+}
+
+.contact-info li.linkedin a {
+  background-image: url('../img/icons/linkedin12.png');
+}
+
+.contact-info li.git a {
+  background-image: url('../img/icons/github.png');
+}
+
+.credit {
+  text-align: center;
+  font-size: .777em;
+  color: lightslategray;
+  margin-bottom: 50px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-pic img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.contact-ul {
+  font-size: 1.333em;
+}
+
+.contact-ul li {
+  margin-bottom: 30px;
+}
+
+.contact-pic,
+.contact-ul {
+  margin: 30px 0;
+}
+
+.contact-pic {
+  width: 30%;
+}
+
+
+
+/*
+-----------------------------*/
+
+
+
+
+/*
+-----------------------------*/
